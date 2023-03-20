@@ -15,13 +15,13 @@ time.sleep(1)
 #ユーザーid入力
 userID = driver.find_element_by_id("login-user")
 userID.clear()
-userID.send_keys("s203112")
+userID.send_keys("userID")
 # 1秒待機
 time.sleep(1)
 #パスワード入力
 userpass = driver.find_element_by_id("login-password")
 userpass.clear()
-userpass.send_keys("Z4v2lr737?")
+userpass.send_keys("password")
 #ログインボタンをクリック
 login_btn = driver.find_element_by_xpath("/html/body/form/div[2]/div[3]/input")
 login_btn.click()
@@ -41,7 +41,7 @@ report_btn.click()
 #time = datetime.datetime.now()
 #time = time.strftime('%Y年%m月%d日 %H:%M:%S')
 
-#TOKEN = 'kBFF5Qhbyu0DFCuijyZHfqBhTZR29cZZrK5AY9oJgfP'
+#TOKEN = 'MYTOKEN'
 #api_url = 'https://notify-api.line.me/api/notify'
 #時刻を送る内容の変数に設定
 #send_contents = time
