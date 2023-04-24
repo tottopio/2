@@ -29,8 +29,8 @@ login_btn.click()
 taicho_btn = driver.find_element_by_xpath("/html/body/main/form/div[1]/div/div[1]/label")
 taicho_btn.click()
 
-#1秒待機
-#time.sleep(100)
+#100秒待機
+time.sleep(100)
 
 
 
@@ -38,17 +38,17 @@ taicho_btn.click()
 report_btn = driver.find_element_by_xpath("/html/body/main/form/div[3]/button")
 report_btn.click()
 
-#time = datetime.datetime.now()
-#time = time.strftime('%Y年%m月%d日 %H:%M:%S')
+time = datetime.datetime.now()
+time = time.strftime('%Y年%m月%d日 %H:%M:%S')
 
-#TOKEN = 'MYTOKEN'
-#api_url = 'https://notify-api.line.me/api/notify'
+TOKEN = 'MYTOKEN'
+api_url = 'https://notify-api.line.me/api/notify'
 #時刻を送る内容の変数に設定
-#send_contents = time
+send_contents = time
 
-#TOKEN_dic = {'Authorization': 'Bearer' + ' ' + TOKEN}
-#send_dic = {'message': send_contents}
-#requests.post(api_url, headers=TOKEN_dic, data=send_dic)
+TOKEN_dic = {'Authorization': 'Bearer' + ' ' + TOKEN}
+send_dic = {'message': send_contents}
+requests.post(api_url, headers=TOKEN_dic, data=send_dic)
 
 #1秒待機
 time.sleep(1)
