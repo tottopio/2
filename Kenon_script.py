@@ -3,8 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-#import requests
-#import datetime
+import requests
+import datetime
 
 # ブラウザを開く。
 driver = webdriver.Chrome("C:/Users/cococ/OneDrive/デスクトップ/chromedriver_win32/chromedriver.exe")
